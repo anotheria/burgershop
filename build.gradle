@@ -11,15 +11,14 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 project.ext {
-    moskitoVersion = '2.6.0'
+    moskitoVersion = '2.8.4'
+    moskitoAgentVersion = '1.2.0'
 }
 
 repositories {
     mavenLocal()
     mavenCentral()
     maven { url "http://nexus.anotheria.net/nexus/content/groups/public" }
-    maven { url "http://repo.maven.apache.org/maven2" }
-    maven { url "http://central.maven.org/maven2/" }
 }
 dependencies {
     compile group: 'org.springframework', name: 'spring-web', version: '3.2.4.RELEASE'
@@ -35,5 +34,7 @@ dependencies {
     compile group: 'net.anotheria', name: 'moskito-aop', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-inspect-remote', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-webui', version: moskitoVersion
-    compile group: 'org.moskito', name: 'moskito-control-agent', version: '1.2.0'
+    compile group: 'org.moskito', name: 'moskito-control-agent', version: moskitoAgentVersion
+    compile group: 'com.xeiam.xchart', name: 'xchart', version: '2.5.1'
+    compile group: 'de.erichseifert.vectorgraphics2d', name: 'VectorGraphics2D', version: '0.9.3'
 }
