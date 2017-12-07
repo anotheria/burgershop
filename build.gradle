@@ -15,6 +15,9 @@ project.ext {
     moskitoAgentVersion = '1.2.0'
 }
 
+configurations {
+    compile.exclude group: 'com.xeiam.xchart'
+}
 repositories {
     mavenLocal()
     mavenCentral()
@@ -35,6 +38,4 @@ dependencies {
     compile group: 'net.anotheria', name: 'moskito-inspect-remote', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-webui', version: moskitoVersion
     compile group: 'org.moskito', name: 'moskito-control-agent', version: moskitoAgentVersion
-    compile group: 'com.xeiam.xchart', name: 'xchart', version: '2.5.1'
-    compile group: 'de.erichseifert.vectorgraphics2d', name: 'VectorGraphics2D', version: '0.9.3'
 }
