@@ -1,4 +1,12 @@
-.idea
+*.class
 target
-*.iml
+.idea
 logs
+*.iml
+gradle
+.gradle
+
+
+# Package Files #
+*.war
+*.ear
